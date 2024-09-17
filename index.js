@@ -15,7 +15,7 @@ console.log(`type: ${os.type()}`);
 console.log(`uptime: ${os.uptime()}`);
 console.log(`userInfo: ${os.userInfo()}`);
 
-console.log("%c====== Global Objects in JS =========");
+console.log("%c====== Global Objects in Node JS =========");
 console.log(global);
 console.log(console);
 console.log(process);
