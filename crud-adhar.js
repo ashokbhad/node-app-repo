@@ -55,7 +55,7 @@ newApp.post("/employeesAadhar", async (req, res) => {
 });
 
 // Endpoint to fetch all student data
-newApp.get("/employeesAadhar", async (req, res) => {
+newApp.get("/employeesAadhar", async (_req, res) => {
   console.log("Fetching employee Aadhar details from MongoDB... ");
   const allEmployees = await StudentData.find({});
   return res.status(200).json(allEmployees);
