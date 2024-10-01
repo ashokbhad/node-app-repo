@@ -26,11 +26,11 @@ connectToDatabase();
 // Defining a new Schema
 const empDataSchema = new mongoose.Schema(
   {
-    aadharNumber: { type: String },
+    aadharNumber: { type: Number },
     fullName: { type: String },
-    isMarried: { type: String },
+    isMarried: { type: Boolean },
     location: { type: String },
-    pin: { type: String },
+    pin: { type: Number },
     country: { type: String },
   },
   { collection: "Aadhar_collection" }
