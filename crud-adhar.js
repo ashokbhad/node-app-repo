@@ -24,7 +24,7 @@ async function connectToDatabase() {
 connectToDatabase();
 
 // Defining a new Schema
-const studentDataSchema = new mongoose.Schema(
+const empDataSchema = new mongoose.Schema(
   {
     aadharNumber: { type: String },
     fullName: { type: String },
@@ -37,7 +37,7 @@ const studentDataSchema = new mongoose.Schema(
 );
 
 // Create a Model
-const StudentData = mongoose.model("StudentData", studentDataSchema);
+const StudentData = mongoose.model("StudentData", empDataSchema);
 
 // Endpoint to add student data from request body
 newApp.post("/employeesAadhar", async (req, res) => {
