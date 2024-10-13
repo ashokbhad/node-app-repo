@@ -41,9 +41,9 @@ const StudentData = mongoose.model("StudentData", empDataSchema);
 
 // Endpoint to add student data from request body
 newApp.post("/employeesAadhar", async (req, res) => {
-  const studentData = req.body; // Expecting an array of student objects
+  const employeesData = req.body; // Expecting an array of student objects
   try {
-    await StudentData.insertMany(studentData);
+    await employeesData.insertMany(employeesData);
     return res
       .status(201)
       .json({ message: "Employees Aadhar details are added successfully." });
